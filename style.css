@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    --text-color: white;
+    --bg-url: url(./assets/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+a{
+    cursor: pointer;
+}
+
+link{
+    display: none;
+}
+
+body{
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color)
+}
+
+ul {
+    list-style: none;
+  
+    display: flex;
+    flex-direction: column;
+  
+    padding: 24px 0;
+  }
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    font-weight: 500;
+    margin: 10px 400px;
+    color: var(--text-color);
+}
+
+a:-webkit-any-link{
+    cursor: pointer;
+}
+
+#perfil{
+    margin-top: 30px;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+}
+
+.redes{
+    height: 50px;
+    width: 50px;
+    margin: 30px 0px 90px 0px;
+}
+
+.btn:hover{
+    background: var(--highlight-color);
+}
+
+ul li a:hover {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+  }
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
